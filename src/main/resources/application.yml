@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    include: bpm
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+  devtools:
+    restart:
+      enabled: true
+#logging:
+#  config:
+#  file:
+#    max-size:
+#    max-history:
+#  exception-conversion-word:
+#  level: info
+#  path:
+#  pattern:
+#    console:
+#    dateformat:
+#    file:
+#    level:
+#  register-shutdown-hook: true
